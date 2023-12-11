@@ -4,7 +4,8 @@
   "description": "A simple movie library.",
   "main": "app.js",
   "scripts": {
-    "dev": "nodemon ./app.js"
+    "dev": "nodemon ./app.js",
+    "watch": "nodemon --ext *"
   },
   "repository": {
     "type": "git",
@@ -17,10 +18,15 @@
   },
   "homepage": "https://github.com/20rp/movdb#readme",
   "dependencies": {
+    "body-parser": "^1.20.2",
     "express": "^4.18.2",
     "express-session": "^1.17.3",
-    "nodemon": "^3.0.2",
     "npm": "^10.2.4",
     "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "connect-livereload": "^0.6.1",
+    "livereload": "^0.9.3",
+    "nodemon": "^3.0.2"
   }
 }
