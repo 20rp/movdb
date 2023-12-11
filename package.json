@@ -1,0 +1,24 @@
+{
+  "name": "movdb",
+  "version": "1.0.0",
+  "description": "A simple movie library.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/20rp/movdb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/20rp/movdb/issues"
+  },
+  "homepage": "https://github.com/20rp/movdb#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "npm": "^10.2.4"
+  }
+}
