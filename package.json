@@ -1,32 +1,38 @@
 {
-  "name": "movdb",
-  "version": "1.0.0",
-  "description": "A simple movie library.",
-  "main": "app.js",
-  "scripts": {
-    "dev": "nodemon ./app.js",
-    "watch": "nodemon --ext *"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/20rp/movdb.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/20rp/movdb/issues"
-  },
-  "homepage": "https://github.com/20rp/movdb#readme",
-  "dependencies": {
-    "body-parser": "^1.20.2",
-    "express": "^4.18.2",
-    "express-session": "^1.17.3",
-    "npm": "^10.2.4",
-    "pug": "^3.0.2"
-  },
-  "devDependencies": {
-    "connect-livereload": "^0.6.1",
-    "livereload": "^0.9.3",
-    "nodemon": "^3.0.2"
-  }
+    "name": "movdb",
+    "version": "1.0.0",
+    "description": "A simple movie library.",
+    "main": "app.js",
+    "scripts": {
+        "dev": "ts-node ./dist/app.js",
+        "build-dist": "./node_modules/typescript/bin/tsc"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/20rp/movdb.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/20rp/movdb/issues"
+    },
+    "homepage": "https://github.com/20rp/movdb#readme",
+    "dependencies": {
+        "@prisma/client": "^5.7.0",
+        "body-parser": "^1.20.2",
+        "express": "^4.18.2",
+        "express-session": "^1.17.3",
+        "npm": "^10.2.4",
+        "pug": "^3.0.2",
+        "source-map-support": "^0.5.21",
+        "typescript": "^5.3.3"
+    },
+    "devDependencies": {
+        "@types/node": "^20.10.4",
+        "connect-livereload": "^0.6.1",
+        "livereload": "^0.9.3",
+        "nodemon": "^3.0.2",
+        "prisma": "^5.7.0",
+        "ts-node": "^10.9.2"
+    }
 }
